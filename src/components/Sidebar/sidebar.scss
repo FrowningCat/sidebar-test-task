@@ -1,0 +1,82 @@
+$mainTextColor: #404040;
+$selectedTextColor: #0052b4;
+$buttonTextColor: #fff;
+$hoverTextColor: #201714;
+$buttonColor: #0052b4;
+$selectedBorderBackgroundColor: #b5d7ff;
+$bordeRadius: #808080;
+$mainBackgroundColor: #dfe8eb;
+$hoverBorderBackgroundColor: #dcdcdc;
+
+$mainSizeText: 16px;
+$titleSizeText: 22px;
+
+.sidebar {
+    width: 15vw;
+    display: grid;
+    gap: 36px;
+    font-size: $mainSizeText;
+    color: $mainTextColor;
+    border: 1px solid $bordeRadius;
+    border-radius: 15px;
+    background-color: $mainBackgroundColor;
+    padding: 12px;
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        &__img {
+            width: 48px;
+            height: 48px;
+        }
+        &__text {
+            font-size: $titleSizeText;
+        }
+        &__button {
+            border-radius: 100%;
+            margin-left: 40px;
+            border: none;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+    }
+    &__icon {
+        display: grid;
+        gap: 12px;
+        justify-content: space-between;
+        &__element {
+            box-sizing: border-box;
+            padding-left: 12px;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            width: 15vw;
+            height: 30px;
+            cursor: pointer;
+        }
+        &__element:hover {
+            background-color: $hoverBorderBackgroundColor;
+            color: $hoverTextColor;
+            border-radius: 15px;
+        }
+        &__click {
+            box-sizing: border-box;
+            padding-left: 12px;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            width: 15vw;
+            height: 30px;
+            cursor: pointer;
+            color: $selectedTextColor;
+            background-color: $selectedBorderBackgroundColor;
+            border-radius: 15px;
+        }
+    }
+    &__footer {
+        margin-top: 60px;
+    }
+}
