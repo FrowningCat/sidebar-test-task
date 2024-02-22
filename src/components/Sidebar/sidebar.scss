@@ -95,4 +95,20 @@ $titleSizeText: 22px;
     border-radius: 15px;
     background-color: $mainBackgroundColor;
     padding: 12px;
+    .sidebar__logo__text {
+        display: none;
+    }
+    .sidebar__icon {
+        &__element {
+            display: grid;
+            align-items: center;
+            width: 3vw;
+            &__text {
+                display: none;
+            }
+        }
+        &__click {
+            width: 3vw;
+        }
+    }
 }
