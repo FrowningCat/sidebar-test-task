@@ -32,6 +32,7 @@ $titleSizeText: 22px;
             height: 48px;
         }
         &__text {
+            display: block;
             font-size: $titleSizeText;
         }
         &__button {
@@ -56,6 +57,9 @@ $titleSizeText: 22px;
             width: 15vw;
             height: 30px;
             cursor: pointer;
+            &__text {
+                display: block;
+            }
         }
         &__element:hover {
             background-color: $hoverBorderBackgroundColor;
@@ -79,4 +83,16 @@ $titleSizeText: 22px;
     &__footer {
         margin-top: 60px;
     }
+}
+
+.sidebarSmall {
+    width: 3vw;
+    display: grid;
+    gap: 36px;
+    font-size: $mainSizeText;
+    color: $mainTextColor;
+    border: 1px solid $bordeRadius;
+    border-radius: 15px;
+    background-color: $mainBackgroundColor;
+    padding: 12px;
 }
